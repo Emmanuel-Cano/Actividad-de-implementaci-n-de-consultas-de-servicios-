@@ -1,8 +1,26 @@
-
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
+
+
+      static class Trabajador {
+        int id;
+        String nombre;
+        double sueldo;
+
+        public Trabajador(int id, String nombre, double sueldo) {
+            this.id = id;
+            this.nombre = nombre;
+            this.sueldo = sueldo;
+        }
+
+        @Override
+        public String toString() {
+            return "Trabajador{id=" + id + ", nombre='" + nombre + "', sueldo=" + sueldo + "}";
+        }
+    }
+
     public static void main(String[] args) throws Exception {
 
   /*       //Crear una lista
@@ -81,6 +99,28 @@ public class App {
         System.out.println("Stack: " + libros);
  */
 
+
+         List<Trabajador> trabajador = new ArrayList<>();
+        trabajador.add(new Trabajador(1, "juan", 950));
+        trabajador.add(new Trabajador(2, "chema", 1200));
+        trabajador.add(new Trabajador(3, "juan gabriel", 1100));
+        trabajador.add(new Trabajador(4, "joan sebastian", 800));
+        trabajador.add(new Trabajador(5, "vicente fernandez", 1500));
+        trabajador.add(new Trabajador(6, "jose jose", 990));
+
+        double suma = 0;
+        for (Trabajador t : trabajador) {
+            suma = suma + t.sueldo;
+        }
+        double promedio = suma / 6;
+        System.out.println("Promedio de sueldo: " + promedio);
+
+        trabajador.removeIf(t -> t.sueldo < 1000);
+
+        System.out.println("Lista actualizada:");
+        for (Trabajador t : trabajador) {
+            System.out.println(t);
+        }
 
     
         
