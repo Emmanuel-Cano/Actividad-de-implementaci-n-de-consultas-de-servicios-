@@ -1,10 +1,10 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class App {
 
 
-      static class Trabajador {
+  /*     static class Trabajador {
         int id;
         String nombre;
         double sueldo;
@@ -19,7 +19,7 @@ public class App {
         public String toString() {
             return "Trabajador{id=" + id + ", nombre='" + nombre + "', sueldo=" + sueldo + "}";
         }
-    }
+    } */
 
     public static void main(String[] args) throws Exception {
 
@@ -100,7 +100,7 @@ public class App {
  */
 
 
-         List<Trabajador> trabajador = new ArrayList<>();
+ /*         List<Trabajador> trabajador = new ArrayList<>();
         trabajador.add(new Trabajador(1, "juan", 950));
         trabajador.add(new Trabajador(2, "chema", 1200));
         trabajador.add(new Trabajador(3, "juan gabriel", 1100));
@@ -121,9 +121,32 @@ public class App {
         for (Trabajador t : trabajador) {
             System.out.println(t);
         }
-
+ */
     
         
+
+
+        Deque<String> historial = new ArrayDeque<>();
+
+      
+        historial.push("https://www.google.com");
+        historial.push("https://www.github.com");
+        historial.push("https://www.microsoft.com");
+
+        historial.pop();
+
+        System.out.println("Página actual: " + historial.peek());
+
+        historial.push("https://www.roblox.com");
+
+        System.out.println("Historial:");
+        for (String pagina : historial) {
+            System.out.println(pagina);
+        }
+
+
+
+
 
     }
 }
