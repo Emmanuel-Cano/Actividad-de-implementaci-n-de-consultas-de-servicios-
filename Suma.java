@@ -9,7 +9,7 @@ public static int suma (int n){
     }
 }
 public static void main(String[] args) {
-    int resultado = suma(5);
-    System.out.println("La suma es: 5 + 4 + 3 + 2 + 1 + 0 = " + resultado);
+    int resultado = suma(10);
+    System.out.println("La suma es: " + resultado);
 }
 }
