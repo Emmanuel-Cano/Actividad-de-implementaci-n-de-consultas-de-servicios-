@@ -73,6 +73,7 @@ public class SinglyLinkedList {
                 }
             }
             current = current.next;
+            
 
         }
     }
