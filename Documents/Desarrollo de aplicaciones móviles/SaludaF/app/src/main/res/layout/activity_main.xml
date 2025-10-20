@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FACBA4"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre pequeña"
+        android:paddingBottom="16dp"
+        android:textColor="#6F0000"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/saludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#211B1B"
+        android:text="Saludar"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/saludo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#211B1B"
+        android:text="Saludar 2"
+        android:layout_marginRight="16dp"/>
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appp_name"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+</LinearLayout>

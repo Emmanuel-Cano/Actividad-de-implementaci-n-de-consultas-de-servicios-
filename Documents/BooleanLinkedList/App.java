@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) {
         DoubleLinkedList list = new DoubleLinkedList();
+
         System.out.println("Lista antes de agregar elementos:");
         list.printForward();
 
@@ -9,7 +10,7 @@ public class App {
         list.add(5);
         list.add(6);
 
-        System.out.println("Lista");
+        System.out.println("Lista:");
         list.printForward();
 
         System.out.println("\n------Imprimir backward------");

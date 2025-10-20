@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Calculadora" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/button_purple</item>
+        <item name="colorPrimaryVariant">@color/dark_gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/button_teal</item>
+        <item name="android:windowBackground">@color/black_bg</item>
+    </style>
+
+    <!-- Estilo general para botones -->
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/dark_gray</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Estilo para operadores -->
+    <style name="CalcButtonOperator" parent="CalcButton">
+        <item name="android:backgroundTint">@color/button_purple</item>
+    </style>
+
+    <!-- Estilo para el botón de borrar -->
+    <style name="CalcButtonClear" parent="CalcButton">
+        <item name="android:backgroundTint">@color/red_accent</item>
+    </style>
+
+
+</resources>

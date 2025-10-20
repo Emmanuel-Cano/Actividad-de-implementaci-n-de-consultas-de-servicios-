@@ -1,0 +1,48 @@
+.box{
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid red;
+    background-color: lightpink;
+
+}
+.box2{
+
+    background-color: lightblue;
+    padding: 30px;
+    border: 2px solid blue;
+    margin: 20px;
+}
+
+.box3{
+    width: 300px;
+    height: 100px;
+    background-color: lightgreen;
+    position: static;
+}
+.box4{
+    width: 300px;
+    height: 100px;
+    background-color: lightgrey;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+
+}
+
+.countainer{
+    width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+    position: relative;
+
+}
+
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}

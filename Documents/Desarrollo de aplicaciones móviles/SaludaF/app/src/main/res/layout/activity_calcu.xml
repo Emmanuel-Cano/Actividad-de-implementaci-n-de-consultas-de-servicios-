@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora el chambador "
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="21sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num1"
+        android:hint="Ingresa el numero 1"
+        android:textColorHint="@color/white"
+        android:paddingBottom="16dp"
+        android:textColor="#F8F8F8"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:hint="Ingresa tu numero 2"
+        android:textColorHint="@color/white"
+        android:paddingBottom="16dp"
+        android:textColor="#FFFFFF"
+        >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF"
+            android:textColor="@color/black"
+            android:text="+"
+            android:layout_marginRight="16dp"
+            android:onClick="onButtonClick" />
+
+        <Button
+            android:id="@+id/resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF"
+            android:textColor="@color/black"
+            android:text="-"
+            android:layout_marginRight="16dp"
+            android:onClick="onButtonClick" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF"
+            android:textColor="@color/black"
+            android:text="*"
+            android:layout_marginRight="16dp"
+            android:onClick="onButtonClick" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFF"
+            android:textColor="@color/black"
+            android:text="/"
+            android:layout_marginRight="16dp"
+            android:onClick="onButtonClick" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu resultado es: "
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/tecmi" />
+
+
+</LinearLayout>

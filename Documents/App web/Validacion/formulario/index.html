@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <main>
+        <h2>Registro</h2>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido">
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha">
+
+        <label>Género</label>
+        <input type="radio" name="genero" value="Masculino"> Masculino
+        <input type="radio" name="genero" value="Femenino"> Femenino
+        <input type="radio" name="genero" value="Otro"> Otro
+
+        <br><br>
+        <label>
+            <input type="checkbox" id="terminos">
+            Acepto los términos y condiciones
+        </label>
+
+        <div id="mostrarMensaje"></div>
+
+        <button id="registrar">Registrarse</button>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
