@@ -1,0 +1,19 @@
+.button{
+    background-color:blueviolet;
+    border-radius: '10px';
+    color:aqua;
+    border: 'none';
+    padding: '2px 10px';
+}
+.card{
+    border: 1px solid #ccc;
+    background-color: rgb(165, 191, 192);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    min-width: 200px;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
